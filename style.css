@@ -25,6 +25,8 @@ html {
     font-family: 'Thasadith', sans-serif;
     font-family: 'Voces', sans-serif;
     font-family: 'Ysabeau', sans-serif;
+    font-size: 1.07em;
+    box-sizing: border-box;
 }
 
 body {
@@ -48,14 +50,51 @@ body {
 }
 
 .msg p {
+    font-family: sans-serif;
+}
+
+.logo-dx a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    height: 300px;
     color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #333;
+}
+
+footer p {
+    font-family: sans-serif;
+}
+
+a {
+    font-family: sans-serif;
+}
+
+.msg p {
+    color: white;
+}
+
+.chisiamo1-sx {
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 1.7em;
+    font-family: sans-serif;
 }
 
 .logo {
     display: flex;
     width: 90%;
-    background-color: transparent;
-    position: sticky;
     height: 100px;
     margin: auto;
 }
@@ -73,8 +112,6 @@ ul {
 
 .logo {
     display: flex;
-    width: 95%;
-    margin: auto;
     flex-direction: row;
 }
 
@@ -148,21 +185,21 @@ ul {
 
 .servizi-sx {
     flex: 33%;
-    background-color: #00cc6608;
+    background-color: #00cc6610;
     padding: 1.5em;
     border-radius: 1.5rem;
 }
 
 .servizi-cnt {
     flex: 33%;
-    background-color: #00cc6608;
+    background-color: #00cc6610;
     padding: 1.5em;
     border-radius: 1.5rem;
 }
 
 .servizi-dx {
     flex: 33%;
-    background-color: #00cc6608;
+    background-color: #00cc6610;
     padding: 1.5em;
     border-radius: 1.5rem;
 }
@@ -211,11 +248,58 @@ ul {
     border-radius: 1.5rem;
     color: white;
 }
+
 .app-sx a:hover {
     background-color: var(--colorprimaryhover);
 }
 
+.navbar {
+    z-index: 90;
+}
 
+.svgnav{
+    padding: 10px;
+}
+
+.svgnavclose {
+    background-color: black;
+    fill: white !important;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    background-color: black;
+    z-index: 69;
+    transition: .3s;
+    transform: translateX(-100%);
+}
+
+
+.wide {
+    transform: translateX(0);
+}
+
+nav ul {
+    list-style:none;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -243,9 +327,6 @@ ul {
     border-radius: 50%;
 }
 
-.torna-su a:hover {
-    background-color: var(--colorprimaryhover);
-}
 
 
 @media screen and (min-width:480px) {
@@ -277,9 +358,11 @@ ul {
     .chisiamo-dx img {
         border-radius: 1.5rem;
     }
+
     .app-dx img {
         border-radius: 1.5rem;
     }
+
     .servizi {
         flex-direction: row;
         gap: 1.5rem;
@@ -344,6 +427,8 @@ ul {
         margin-top: 50px;
     }
 
+ 
+
     .logo-dx {
         display: none;
     }
@@ -354,6 +439,7 @@ ul {
         flex-direction: column;
         height: 100px;
         margin: auto;
+        background-color: white;
     }
 
     .logo-sx {
@@ -396,6 +482,11 @@ ul {
 }
 
 @media screen and (min-width:1024px) {
+
+    .torna-su a:hover {
+        background-color: var(--colorprimaryhover);
+    }
+
     .container {
         max-width: 1024px;
     }
@@ -453,6 +544,9 @@ ul {
 }
 
 @media screen and (min-width:1080px) {
+    nav {
+        display: none;
+    }
     .container {
         max-width: 1080px;
     }

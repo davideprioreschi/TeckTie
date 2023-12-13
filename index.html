@@ -10,7 +10,7 @@
 
 <body>
     <div class="msg">
-        <p>Attenzione! Sito in aggiornamento</p>
+        <p>Attenzione! Sito in aggiornamento...</p>
     </div>
     <header class="logo container">
         <div class="logo-sx">
@@ -22,22 +22,30 @@
             <li><a href="#servizi">Servizi</a></li>
             <li><a href="#download">Download</a></li>
         </ul>
-        <div class="logo-dx">
+        <div class="logo-dx navbar">
             <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
-                fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" class="svgnav">
+                    <path
+                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+                    </path>
                 </svg>
             </a>
         </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+            <li><a href="#chisiamo">Chi siamo</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="banner">
         <h1>Connettiti con il mondo della programmazione</h1>
     </section>
     <section class="chisiamo container" id="chisiamo">
-        <div class="chisiamo-sx">
+        <div class="chisiamo-sx chisiamo1-sx">
             <h1>Resta in contatto con i tuoi follower</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minus rem incidunt doloribus vel quis
                 totam neque, laudantium hic repellendus assumenda fugit voluptas cum! Est quo id aperiam aliquam earum!
@@ -51,7 +59,7 @@
         <div class="chisiamo-dx">
             <img src="img/sec-2.jpg" alt="">
         </div>
-        <div class="chisiamo-sx">
+        <div class="chisiamo-sx chisiamo1-sx">
             <h1>Condividi con chi vuoi i tuoi progetti</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minus rem incidunt doloribus vel quis
                 totam neque, laudantium hic repellendus assumenda fugit voluptas cum! Est quo id aperiam aliquam earum!
@@ -59,7 +67,7 @@
         </div>
     </section>
     <section class="chisiamo container chisiamo3">
-        <div class="chisiamo-sx">
+        <div class="chisiamo-sx chisiamo1-sx">
             <h1>Impara le basi della programmazione</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minus rem incidunt doloribus vel quis
                 totam neque, laudantium hic repellendus assumenda fugit voluptas cum! Est quo id aperiam aliquam earum!
@@ -100,13 +108,21 @@
         <div class="app-dx">
             <img src="img/app.jpg" alt="">
         </div>
-        <div class="app-sx">
+        <div class="app-sx chisiamo1-sx">
             <h1>Scopri la nostra nuova app</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minus rem incidunt doloribus vel quis
                 totam neque, laudantium hic repellendus assumenda fugit voluptas cum! Est quo id aperiam aliquam earum!
             </p>
             <a href="#">Download</a>
         </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © 2023 TeckTie</p>
+        </div>
+
+    </footer>
 
 
 
@@ -119,6 +135,21 @@
             </svg>
         </a>
     </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navbar').click(function () {
+                $('.nav').toggleClass('wide');
+                $('.svgnav').toggleClass('svgnavclose');
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
