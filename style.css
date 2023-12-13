@@ -54,6 +54,18 @@ body {
     align-items: center;
 }
 
+.footer {
+    display: flex;
+    height: 300px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #333;
+}
+
 .msg p {
     color: white;
 }
@@ -63,6 +75,7 @@ body {
 }
 h1 {
     font-size: 1.7em;
+    font-family: sans-serif;
 }
 
 .logo {
