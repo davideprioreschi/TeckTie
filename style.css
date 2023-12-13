@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=KoHo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito&family=Poppins:wght@400;700&family=Quicksand&family=Rubik&family=Thasadith:ital@1&family=Voces&family=Ysabeau&display=swap');
+
+:root {
+    --colorprimary: #007acc;
+    --colorsecondary: #00cc66;
+    --colorprimaryhover: #005580;
+    --colorsecondaryhover: #33cc99;
+    --colorbody: #e6f2f0;
+    --colorwarning: #cc3300;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'KoHo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Thasadith', sans-serif;
+    font-family: 'Voces', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.msg {
+    display: flex;
+    height: 30px;
+    background-color: var(--colorwarning);
+    justify-content: center;
+    align-items: center;
+}
+
+.msg p {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    width: 90%;
+    background-color: transparent;
+    position: sticky;
+    height: 100px;
+    margin: auto;
+}
+
+.logo-sx {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: row;
+}
+
+.logo-sx {
+    flex-basis: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-dx {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    background-color: #808080;
+    background-image: url(img/banner.jpg);
+    background-blend-mode: multiply;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    height: 400px;
+    background-position: center center;
+}
+
+.chisiamo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chisiamo-sx {
+    flex: 100%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.chisiamo2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chisiamo-dx {
+    flex: 100%;
+}
+
+.logo-dx svg {
+    fill: black;
+}
+
+.chisiamo-dx img {
+    width: 100%;
+}
+
+.servizi {
+    display: flex;
+    margin-top: 50px;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servizi-sx {
+    flex: 33%;
+    background-color: #00cc6608;
+    padding: 1.5em;
+    border-radius: 1.5rem;
+}
+
+.servizi-cnt {
+    flex: 33%;
+    background-color: #00cc6608;
+    padding: 1.5em;
+    border-radius: 1.5rem;
+}
+
+.servizi-dx {
+    flex: 33%;
+    background-color: #00cc6608;
+    padding: 1.5em;
+    border-radius: 1.5rem;
+}
+
+
+.btn-servizi {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 1.5rem;
+    background-color: var(--colorprimary);
+    color: white;
+}
+
+.btn-servizi:hover {
+    background-color: var(--colorprimaryhover);
+}
+
+.app {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+
+}
+
+.app-sx {
+    flex: 100%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-dx {
+    flex: 100%;
+}
+
+.app-dx img {
+    width: 100%;
+}
+
+.app-sx a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--colorprimary);
+    border-radius: 1.5rem;
+    color: white;
+}
+.app-sx a:hover {
+    background-color: var(--colorprimaryhover);
+}
+
+
+
+
+
+
+.torna-su {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    width: 100px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 50%;
+    right: 0;
+    /* display: none; */
+}
+
+.torna-su a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--colorprimary);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.torna-su a:hover {
+    background-color: var(--colorprimaryhover);
+}
+
+
+@media screen and (min-width:480px) {
+
+
+    .container {
+        max-width: 480px;
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+@media screen and (min-width:640px) {
+
+    .container {
+        max-width: 640px;
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+
+    .chisiamo-dx img {
+        border-radius: 1.5rem;
+    }
+    .app-dx img {
+        border-radius: 1.5rem;
+    }
+    .servizi {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .servizi-sx {
+        flex-basis: 33%;
+    }
+
+    .servizi-cnt {
+        flex-basis: 33%;
+    }
+
+    .servizi-dx {
+        flex-basis: 33%;
+    }
+
+    .chisiamo2 {
+        flex-direction: row;
+    }
+
+    .chisiamo {
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .chisiamo-sx {
+        flex: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chisiamo-dx {
+        flex: 50%;
+    }
+
+    .app {
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .app-sx {
+        flex: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app-dx {
+        flex: 50%;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .banner {
+        height: 600;
+        margin-top: 50px;
+    }
+
+    .logo-dx {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        height: 100px;
+        margin: auto;
+    }
+
+    .logo-sx {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        list-style-type: none;
+    }
+
+    .active {
+        background-color: var(--colorprimary);
+        color: white;
+    }
+
+    .active:hover {
+        background-color: var(--colorprimaryhover);
+        color: white;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: var(--colorprimary);
+        padding: 10px;
+        border-radius: 1.5rem;
+        font-weight: bold;
+    }
+
+    ul a:hover {
+        color: var(--colorprimaryhover);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .banner {
+        height: 800px;
+        margin-top: 0px;
+    }
+
+    .logo {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        height: 100px;
+        margin: auto;
+    }
+
+    .logo-sx {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+        list-style-type: none;
+    }
+
+    .active {
+        background-color: var(--colorprimary);
+        color: white;
+    }
+
+    .active:hover {
+        background-color: var(--colorprimaryhover);
+        color: white;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: var(--colorprimary);
+        padding: 10px;
+        border-radius: 1.5rem;
+        font-weight: bold;
+    }
+
+    ul a:hover {
+        color: var(--colorprimaryhover);
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .container {
+        max-width: 1080px;
+    }
+
+}
+
+@media screen and (min-width:1536px) {
+    .container {
+        max-width: 1536px;
+    }
+
+}
