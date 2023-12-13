@@ -309,6 +309,9 @@ nav ul a {
     color: white;
 }
 
+img {
+    background-attachment: fixed;
+}
 
 
 
@@ -493,7 +496,7 @@ nav ul a {
 @media screen and (min-width:1024px) {
 
     .torna-su a:hover {
-        background-color: var(--colorprimaryhover);
+        background-color: #555555;
     }
 
     .container {
@@ -514,14 +517,16 @@ nav ul a {
     }
 
     .logo-sx {
-        flex-basis: 50%;
+        flex-basis: 10%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
+    
+
     ul {
-        flex-basis: 50%;
+        flex-basis: 90%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
