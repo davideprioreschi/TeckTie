@@ -133,7 +133,7 @@ ul {
 .logo-dx {
     flex-basis: 25%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -316,23 +316,22 @@ nav ul a {
 
 .torna-su {
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
     display: block;
-    width: 100px;
+    /* width: 100px; */
     display: flex;
 
     align-items: center;
     justify-content: center;
-    height: 100px;
     border-radius: 50%;
-    right: 0;
+    right: 10px;
     /* display: none; */
 }
 
 .torna-su a {
     text-decoration: none;
     padding: 10px;
-    background-color: var(--colorprimary);
+    background-color: black;
     color: #fff;
     border-radius: 50%;
 }
