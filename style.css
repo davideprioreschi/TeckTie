@@ -48,6 +48,10 @@ body {
     align-items: center;
 }
 
+.msg p {
+    font-family: sans-serif;
+}
+
 .logo-dx a {
     display: flex;
     justify-content: center;
