@@ -256,8 +256,13 @@ ul {
     z-index: 90;
 }
 
-.navbarwide {
+.svgnav{
+    padding: 10px;
+}
 
+.svgnavclose {
+    background-color: black;
+    fill: white !important;
 }
 
 .nav {
