@@ -100,16 +100,17 @@ h1 {
 }
 
 .logo-sx {
-    flex-basis: 10%;
+    flex-basis: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .logo-sx-dx {
-    flex-basis: 90%;
+    flex-basis: 50%;
     display: flex;
     justify-content: flex-end;
+    background-color: #005580;
     align-items: center;
 }
 
@@ -307,6 +308,8 @@ nav ul a {
     text-decoration: none;
     color: white;
 }
+
+
 
 
 
