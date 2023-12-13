@@ -8,3 +8,4 @@ window.onscroll = function () {
 document.getElementById("tornaSuBtn").onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+

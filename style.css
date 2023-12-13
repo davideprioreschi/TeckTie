@@ -85,6 +85,7 @@ a {
 .chisiamo1-sx {
     padding: 1.5rem;
 }
+
 h1 {
     font-size: 1.7em;
     font-family: sans-serif;
@@ -93,8 +94,6 @@ h1 {
 .logo {
     display: flex;
     width: 90%;
-    background-color: transparent;
-    position: sticky;
     height: 100px;
     margin: auto;
 }
@@ -112,8 +111,6 @@ ul {
 
 .logo {
     display: flex;
-    width: 95%;
-    margin: auto;
     flex-direction: row;
 }
 
@@ -250,11 +247,53 @@ ul {
     border-radius: 1.5rem;
     color: white;
 }
+
 .app-sx a:hover {
     background-color: var(--colorprimaryhover);
 }
 
+.navbar {
+    z-index: 90;
+}
 
+.navbarwide {
+
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    background-color: black;
+    z-index: 69;
+    transition: .3s;
+    transform: translateX(-100%);
+}
+
+
+.wide {
+    transform: translateX(0);
+}
+
+nav ul {
+    list-style:none;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -313,9 +352,11 @@ ul {
     .chisiamo-dx img {
         border-radius: 1.5rem;
     }
+
     .app-dx img {
         border-radius: 1.5rem;
     }
+
     .servizi {
         flex-direction: row;
         gap: 1.5rem;
@@ -380,6 +421,8 @@ ul {
         margin-top: 50px;
     }
 
+ 
+
     .logo-dx {
         display: none;
     }
@@ -390,6 +433,7 @@ ul {
         flex-direction: column;
         height: 100px;
         margin: auto;
+        background-color: white;
     }
 
     .logo-sx {
@@ -432,10 +476,10 @@ ul {
 }
 
 @media screen and (min-width:1024px) {
-    
-.torna-su a:hover {
-    background-color: var(--colorprimaryhover);
-}
+
+    .torna-su a:hover {
+        background-color: var(--colorprimaryhover);
+    }
 
     .container {
         max-width: 1024px;
@@ -494,6 +538,9 @@ ul {
 }
 
 @media screen and (min-width:1080px) {
+    nav {
+        display: none;
+    }
     .container {
         max-width: 1080px;
     }

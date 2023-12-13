@@ -22,7 +22,7 @@
             <li><a href="#servizi">Servizi</a></li>
             <li><a href="#download">Download</a></li>
         </ul>
-        <div class="logo-dx">
+        <div class="logo-dx navbar">
             <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
                     <path
@@ -31,6 +31,15 @@
                 </svg>
             </a>
         </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+            <li><a href="#chisiamo">Chi siamo</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="banner">
         <h1>Connettiti con il mondo della programmazione</h1>
@@ -108,25 +117,41 @@
         </div>
     </section>
 
-        <footer class="footer">
-            <div class="container">
-                <p>Copyright © 2023 TeckTie</p>
-            </div>
-            
-        </footer>
-
-
-
-        <div class="torna-su">
-            <a href="#" id="tornaSuBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-arrow-up" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-                </svg>
-            </a>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © 2023 TeckTie</p>
         </div>
-        <script src="script.js"></script>
+
+    </footer>
+
+
+
+    <div class="torna-su">
+        <a href="#" id="tornaSuBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+            </svg>
+        </a>
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navbar').click(function () {
+                console.log("Premuto");
+                $('.nav').toggleClass('wide');
+                $('.navbar').toggleClass('navbarwide')
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
