@@ -66,6 +66,14 @@ body {
     background-color: #333;
 }
 
+footer p {
+    font-family: sans-serif;
+}
+
+a {
+    font-family: sans-serif;
+}
+
 .msg p {
     color: white;
 }
