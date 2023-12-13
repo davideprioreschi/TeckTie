@@ -131,9 +131,9 @@ ul {
 }
 
 .logo-dx {
-    flex-basis: 10%;
+    flex-basis: 25%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
