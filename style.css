@@ -303,7 +303,7 @@ ul a {
 
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 5px 5px 5px 5px;
     right: 10px;
     /* display: none; */
 }

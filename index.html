@@ -135,7 +135,23 @@
                 $('.nav').toggleClass('wide');
                 $('.svgnav').toggleClass('svgnavclose');
             });
+
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 100 || $(document).scrollTop() > 100) {
+                    $('.nav').addClass('wide');
+                    $('.svgnav').removeClass('svgnavclose');
+                    $("#tornaSuBtn").css("display", "block");
+                } else {
+                    $("#tornaSuBtn").css("display", "none");
+                }
+            });
+
+            $("#tornaSuBtn").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            });
         });
+
+
     </script>
     <script src="script.js"></script>
 </body>
