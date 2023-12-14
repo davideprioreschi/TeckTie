@@ -11,7 +11,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 * {
@@ -159,7 +159,7 @@ ul a {
 }
 
 .wide {
-    background-color: black;
+    background-color: transparent;
     transform: translateX(-100%);
 
 }
@@ -344,6 +344,7 @@ ul a {
 @media screen and (min-width:768px) {
 
 
+
     .chisiamo-dx img {
         border-radius: 1.5rem;
     }
@@ -419,7 +420,7 @@ ul a {
  
 
     .logo-dx {
-        display: none;
+        /* display: none; */
     }
 
     .logo {
@@ -459,22 +460,36 @@ ul a {
 
     ul a {
         text-decoration: none;
-        color: var(--colorprimary);
         padding: 10px;
         border-radius: 1.5rem;
         font-weight: bold;
-    }
-
-    ul a:hover {
-        color: var(--colorprimaryhover);
     }
 }
 
 @media screen and (min-width:1024px) {
 
-    .torna-su a:hover {
-        background-color: #555555;
+    .nav {
+        position: absolute;
+        top: 100;
+        right: 0;
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center;
+
     }
+
+    ul {
+        flex-direction: row;
+        display: flex;
+        color: black;
+        flex: 100%;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+
 
     .container {
         max-width: 1024px;
@@ -521,23 +536,10 @@ ul a {
         color: white;
     }
 
-    ul a {
-        text-decoration: none;
-        color: var(--colorprimary);
-        padding: 10px;
-        border-radius: 1.5rem;
-        font-weight: bold;
-    }
-
-    ul a:hover {
-        color: var(--colorprimaryhover);
-    }
 }
 
 @media screen and (min-width:1080px) {
-    nav {
-        display: none;
-    }
+   
     .container {
         max-width: 1080px;
     }
