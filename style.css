@@ -136,6 +136,7 @@ h1 {
 .logo-dx svg {
     padding: 10px;
     fill: black;
+    border-radius: 1.5rem 5px 1.5rem 5px;
 }
 
 .svgnavclose {
@@ -174,6 +175,7 @@ ul a {
     justify-content: center;
     align-items: center;
     color: white;
+    z-index: 99;
     background-size: cover;
     height: 400px;
     background-position: center center;
