@@ -137,7 +137,7 @@ h1 {
 .logo-dx svg {
     padding: 10px;
     fill: black;
-    border-radius: 1.5rem 5px 1.5rem 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .svgnavclose {
